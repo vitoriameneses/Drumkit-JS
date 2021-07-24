@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/imgs/drumBackground.jpg");
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.key {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+}
+.key.active {
+  border: 2px solid rgb(227, 70, 251);
+  color: rgb(227, 70, 251);
+}
+.comp {
+  width: 260px;
+  margin-top: 40px;
+}
+.comp #input {
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+.comp button {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.comp button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
