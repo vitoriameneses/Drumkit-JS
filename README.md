@@ -1,2 +1,2 @@
 # Drumkit-JS
-Created with CodeSandbox
+Projeto de simulação de uma bateria em Javascript.
